@@ -53,11 +53,11 @@ const readmeQuestions = [
         message: "Provide test instructions",
     },
     // need to update this part
-    // {
-    //     type: 'input',
-    //     name: 'email',
-    //     message: "Provide your email address",
-    // },
+    {
+        type: 'input',
+        name: 'license',
+        message: "Provide the license you used",
+    },
 ]
 console.log(readmeQuestions);
 

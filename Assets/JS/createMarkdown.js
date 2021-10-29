@@ -1,23 +1,53 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { }
-
+function renderLicenseBadge(license) {
+    if (license === 'Apache 2.0') {
+        return "## License + [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
+    if (license === 'MIT') {
+        return "## License + [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    }
+    if (license === 'GPL V3') {
+        return "## License + [![License: GPL V3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
+    }
+    if (license === 'MIT') {
+        return "## License + [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    }
+}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
-
+function renderLicenseLink(license) {
+    if (license !== "No license") {
+        return "* https://opensource.org/licenses" + license
+    }
+}
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-    return `# ${data.title}
-
-`;
+function renderLicenseSection(license) {
+    if (license !== "No license") {
+        return `## License This product is licensed under the ${license} product.`
+    }
 }
+// TODO: Create a function to generate markdown for README
 
-module.exports = generateMarkdown;
+// [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+// [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+
+// [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+// [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
+
+
+
+//     function generateMarkdown(data) {
+//         return `# ${data.title}
+
+// `;
+//     }
+
+// module.exports = generateMarkdown;
 
 // what do we want to do here?
 
@@ -38,42 +68,50 @@ module.exports = generateMarkdown;
 // and ${}
 
 // need to add license, email and github
-function createMarkdown({ title, description, installation, usage, contributing, tests }) {
+function createMarkdown({ title, description, installation, usage, contributing, tests, license }) {
     return `
-## ${title}
+    ## ${title}
 
-## Description
+    ## Description
 
-${description}
+    ${description}
+    
+    ${renderLicenseBadge(license)}
 
-## Table of Contents
-1. [Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [Tests](#tests)
-6. [Questions](#questions)
+    ## Table of Contents
+    1. [Description](#description)
+    2. [Installation](#installation)
+    3. [Usage](#usage)
+    4. [Contributing](#contributing)
+    5. [Tests](#tests)
+    6. [Questions](#questions)
 
-## Installation Instructions
+    ## Installation Instructions
 
-${installation}
+    ${installation}
 
-## Usage
+    ## Usage
 
-${usage}
+    ${usage}
 
-## Contributing
+    ## Contributing
 
-${contributing}
+    ${contributing}
 
-## Tests
+    ## Tests
 
-${tests}
+    ${tests}
 
-## Questions
+    ## Licenses
+
+    ${license}
+    ${renderLicenseLink(license)}
+    ${renderLicenseSection(license)}
+
+    ## Questions
 
 
-`;
+    `;
 }
 
 // exporting the function
