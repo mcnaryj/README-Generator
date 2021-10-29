@@ -68,7 +68,7 @@ function renderLicenseSection(license) {
 // and ${}
 
 // need to add license, email and github
-function createMarkdown({ title, description, installation, usage, contributing, tests, license }) {
+function createMarkdown({ title, description, installation, usage, contributing, tests, license, email, github }) {
     return `
 ## ${title}
 
@@ -109,8 +109,8 @@ ${renderLicenseLink(license)}
 ${renderLicenseSection(license)}
 
 ## Questions
-
-
+Please check out my ${github} for more questions on the methodology and what have you.
+I can also be addressed at ${email} for direct requests.
 `;
 }
 

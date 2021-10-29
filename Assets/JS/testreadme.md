@@ -1,11 +1,11 @@
 
-## 
+## Test Readme
 
 ## Description
 
+Testing the readme
 
-
-## License <br />[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## License <br />[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 1. [Description](#description)
@@ -17,26 +17,26 @@
 
 ## Installation Instructions
 
-
+Prepare it accordingly
 
 ## Usage
 
-
+No thanks
 
 ## Contributing
 
-
+MIT
 
 ## Tests
 
-
+Test
 
 ## Licenses
 
  
-* https://opensource.org/licensesApache 2.0
-## License This product is licensed under the Apache 2.0 product.
+* https://opensource.org/licensesMIT
+## License This product is licensed under the MIT product.
 
 ## Questions
-
-
+Please check out my https://mcnaryj.github.io/ for more questions on the methodology and what have you.
+I can also be addressed at jack.mcnary@gmail.com for direct requests.

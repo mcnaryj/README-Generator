@@ -58,6 +58,16 @@ const readmeQuestions = [
         name: 'license',
         message: "Provide the license you used",
     },
+    {
+        type: 'input',
+        name: 'github',
+        message: "Provide the url for your github profile",
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: "Provide your email address",
+    }
 ]
 console.log(readmeQuestions);
 
