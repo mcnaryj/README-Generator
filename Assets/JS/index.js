@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const createMarkdown = require("Assets/JS/createMarkdown.js");
+const createMarkdown = require("./createMarkdown.js");
 
 const readmeQuestions = [
     {
@@ -39,11 +39,11 @@ const readmeQuestions = [
         message: "Provide test instructions",
     },
     // need to update this part
-    {
-        type: 'input',
-        name: 'email',
-        message: "Provide your email address",
-    },
+    // {
+    //     type: 'input',
+    //     name: 'email',
+    //     message: "Provide your email address",
+    // },
 ]
 console.log(readmeQuestions);
 
@@ -60,7 +60,7 @@ function init() {
 // then we want a function to write the README:
 function writeToFile(data) {
     const readmePg = createMarkdown(data);
-    fs.writefile('testreadme.md', readmePg, (err) =>
+    fs.writeFile('testreadme.md', readmePg, (err) =>
         err ? console.log(err) : console.log('Readme successfully created!')
     );
 }

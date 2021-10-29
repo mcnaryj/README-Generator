@@ -51,9 +51,8 @@ ${tests}
 
 ## Questions
 
-${questions}
 
 `;
 }
 
-module.exports = createMarkdown();
+module.exports = createMarkdown;
