@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
     if (license === 'GPL V3') {
         return "## License " + "<br />" + "[![License: GPL V3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
     }
-    if (license === 'MIT') {
+    if (license === 'MPL 2.0') {
         return "## License " + "<br />" + "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
     }
 }
@@ -25,7 +25,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (license !== "No license") {
-        return `## License This product is licensed under the ${license} product.`
+        return `
+        This product is licensed under the ${license} product.`
     }
 }
 // TODO: Create a function to generate markdown for README
