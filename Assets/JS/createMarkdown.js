@@ -1,3 +1,24 @@
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(license) { }
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) { }
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) { }
+
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+    return `# ${data.title}
+
+`;
+}
+
+module.exports = generateMarkdown;
+
 // what do we want to do here?
 
 // we want to create a function that will print out the markup from the inputs in the index.js file
@@ -55,4 +76,9 @@ ${tests}
 `;
 }
 
+// exporting the function
 module.exports = createMarkdown;
+
+// now we have the readme printing, so we just want to render the license content
+// it will be a series of if statements
+

@@ -1,9 +1,9 @@
 
-## T
+## Test Readme
 
 ## Description
 
-T
+The purpose of this is to test the parameters, and get a better feel for how I might render the objects.
 
 ## Table of Contents
 1. [Description](#description)
@@ -15,19 +15,19 @@ T
 
 ## Installation Instructions
 
-T
+Still working that out. Thus far I have left notes on what I have done, which should provide examples of how it's going.
 
 ## Usage
 
-T
+For anyone who wants to see some iffy code.
 
 ## Contributing
 
-T
+Github docs, MDN, a bunch of others
 
 ## Tests
 
-T
+I will eventually
 
 ## Questions
 
