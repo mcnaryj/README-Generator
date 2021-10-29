@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const createMarkdown = require("Assets/JS/createMarkdown.js");
+const createMarkdown = require("Assets/JS/createMarkdown.js");
 
 const readmeQuestions = [
     {
@@ -21,12 +21,12 @@ const readmeQuestions = [
     {
         type: 'input',
         name: 'usage',
-        message: "Give your readme a Title!",
+        message: "Describe the intended usage of this application",
     },
     {
         type: 'input',
         name: 'license',
-        message: "Give your readme a Title!",
+        message: "Put any licenses here.",
     },
     {
         type: 'input',
@@ -41,8 +41,31 @@ const readmeQuestions = [
     // need to update this part
     {
         type: 'input',
-        name: 'questions',
-        message: "Give your readme a Title!",
+        name: 'email',
+        message: "Provide your email address",
     },
 ]
 console.log(readmeQuestions);
+
+// we want a function to start the inquirer
+function init() {
+    inquirer
+        .prompt(readmeQuestions)
+        .then((data) => {
+            console.log(data);
+            writeToFile(data);
+        })
+}
+
+// then we want a function to write the README:
+function writeToFile(data) {
+    const readmePg = createMarkdown(data);
+    fs.writefile('testreadme.md', readmePg, (err) =>
+        err ? console.log(err) : console.log('Readme successfully created!')
+    );
+}
+
+// calling the init function
+init();
+
+
