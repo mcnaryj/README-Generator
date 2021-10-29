@@ -2,16 +2,16 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (license === 'Apache 2.0') {
-        return "## License + [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+        return "## License " + "<br />" + "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
     }
     if (license === 'MIT') {
-        return "## License + [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        return "## License " + "<br />" + "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
     }
     if (license === 'GPL V3') {
-        return "## License + [![License: GPL V3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
+        return "## License " + "<br />" + "[![License: GPL V3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
     }
     if (license === 'MIT') {
-        return "## License + [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+        return "## License " + "<br />" + "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
     }
 }
 // TODO: Create a function that returns the license link
@@ -41,11 +41,11 @@ function renderLicenseSection(license) {
 
 
 
-//     function generateMarkdown(data) {
-//         return `# ${data.title}
+// function generateMarkdown(data) {
+// return `# ${data.title}
 
 // `;
-//     }
+// }
 
 // module.exports = generateMarkdown;
 
@@ -70,48 +70,48 @@ function renderLicenseSection(license) {
 // need to add license, email and github
 function createMarkdown({ title, description, installation, usage, contributing, tests, license }) {
     return `
-    ## ${title}
+## ${title}
 
-    ## Description
+## Description
 
-    ${description}
-    
-    ${renderLicenseBadge(license)}
+${description}
 
-    ## Table of Contents
-    1. [Description](#description)
-    2. [Installation](#installation)
-    3. [Usage](#usage)
-    4. [Contributing](#contributing)
-    5. [Tests](#tests)
-    6. [Questions](#questions)
+${renderLicenseBadge(license)}
 
-    ## Installation Instructions
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [Tests](#tests)
+6. [Questions](#questions)
 
-    ${installation}
+## Installation Instructions
 
-    ## Usage
+${installation}
 
-    ${usage}
+## Usage
 
-    ## Contributing
+${usage}
 
-    ${contributing}
+## Contributing
 
-    ## Tests
+${contributing}
 
-    ${tests}
+## Tests
 
-    ## Licenses
+${tests}
 
-    ${license}
-    ${renderLicenseLink(license)}
-    ${renderLicenseSection(license)}
+## Licenses
 
-    ## Questions
+ 
+${renderLicenseLink(license)}
+${renderLicenseSection(license)}
+
+## Questions
 
 
-    `;
+`;
 }
 
 // exporting the function
