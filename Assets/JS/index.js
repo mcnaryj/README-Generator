@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const createMarkdown = require("Assets/JS/createMarkdown.js");
+// const createMarkdown = require("Assets/JS/createMarkdown.js");
 
 const readmeQuestions = [
     {
@@ -10,13 +10,13 @@ const readmeQuestions = [
     },
     {
         type: 'input',
-        name: 'title',
-        message: "Give your readme a Title!",
+        name: 'description',
+        message: "Describe the project",
     },
     {
         type: 'input',
         name: 'installation',
-        message: "Give your readme a Title!",
+        message: "Provide detailed instructions on how to prepare the content",
     },
     {
         type: 'input',
@@ -25,29 +25,24 @@ const readmeQuestions = [
     },
     {
         type: 'input',
-        name: License,
+        name: 'license',
         message: "Give your readme a Title!",
     },
     {
         type: 'input',
-        name: Contributing,
-        message: "Give your readme a Title!",
+        name: 'contributing',
+        message: "List those who have contributed to your project.",
     },
     {
         type: 'input',
-        name: Tests,
-        message: "Give your readme a Title!",
+        name: 'tests',
+        message: "Provide test instructions",
     },
+    // need to update this part
     {
         type: 'input',
-        name: Questions,
+        name: 'questions',
         message: "Give your readme a Title!",
-    }
-
-
-
-
-
-
-
+    },
 ]
+console.log(readmeQuestions);
