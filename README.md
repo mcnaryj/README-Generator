@@ -14,7 +14,8 @@ The purpose of this project was to create a readme generator that prompts the us
 3. [Usage](#usage)
 4. [Contributing](#contributing)
 5. [Tests](#tests)
-6. [Questions](#questions)
+6. [Licenses](#licenses)
+7. [Questions](#questions)
 
 ## Installation
 
@@ -26,7 +27,12 @@ This application is intended for users who do not want to spend a lot of time pr
 
 ## Contributing
 
-MDN, StackOverflow, MIT.edu, GITHUB docs, VSC
+
+[MDN](developer.mozilla.org/en-US/docs)<br>
+[StackOverflow](https://stackoverflow.com/)<br>
+[MIT](https://opensource.org/licenses/MIT)<br>
+[GITHUB](https://docs.github.com/en)<br>
+[VSC](https://code.visualstudio.com/)<br>
 
 ## Tests
 
