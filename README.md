@@ -18,7 +18,7 @@ The purpose of this project was to create a readme generator that prompts the us
 
 ## Installation
 
-Download the files contained in the README-Generator repository, either through Github or by making a clone of the repository and downloading it locally. Once downloaded, open the file index.html to view the webpage. The published site can be found here: https://mcnaryj.github.io/README-Generator
+Download the files contained in the README-Generator repository, either through Github or by making a clone of the repository and downloading it locally. Once the file is downloaded, open it with VS Code or a similar code editor with node js installed. From there, install the node package modules via npm i, and then enter 'node index.js' in the command line.
 
 ## Usage
 
