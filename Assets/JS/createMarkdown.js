@@ -14,6 +14,11 @@ function renderLicenseBadge(license) {
         return "## License " + "<br />" + "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
     }
 }
+// [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+// [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+// [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+// [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -31,10 +36,7 @@ function renderLicenseSection(license) {
         This product is licensed under the ${license} product.`
     }
 }
-// [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-// [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-// [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-// [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
 
 // adding a badge to the top of the readme (line 49)
 function generateMarkdown({ title, description, installation, usage, contributing, tests, license, email, github }) {
@@ -84,18 +86,21 @@ I can also be addressed at ${email} for direct requests.
 
 }
 // To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the syntax on line 76-78:
-```md
-![alt text](assets / images / screenshot.png)
-    ```
+// ```md
+// ![alt text](assets / images / screenshot.png)
+//     ```
 
 // exporting the function
 module.exports = generateMarkdown;
 
+
+
+// pseudo code
 // now we have the readme printing, so we just want to render the license content
 // it will be a series of if statements (done)
 
 // TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
+// function generateMarkdown() {
 // return `# ${data.title}
 // `;
 // }
