@@ -38,6 +38,9 @@ This application is intended for users who do not want to spend a lot of time pr
 
 Install npm and select the assets/js directory. From there, run node index.js, which will initiate a series of prompts for the user to complete, pertaining to the relevant information contained in a "good" readme. Once the user fills out each form, the generated readme will be written to the JS folder.
 
+[Youtube link demonstrating the functionality of the readme generator in node.js](https://www.youtube.com/watch?v=SN3RN4afpis&feature=youtu.be)
+
+
 ## Licenses
 
 * https://opensource.org/licensesMIT
