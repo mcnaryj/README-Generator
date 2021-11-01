@@ -14,7 +14,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const createMarkdown = require("./createMarkdown.js");
+const generateMarkdown = require("./createMarkdown.js");
 
 const readmeQuestions = [
     {
@@ -83,7 +83,7 @@ function init() {
 
 // and a function to write the README file:
 function writeToFile(data) {
-    const testPg = createMarkdown(data);
+    const testPg = generateMarkdown(data);
     fs.writeFile('testreadme.md', testPg, (err) =>
         err ? console.log(err) : console.log('Readme successfully created!')
     );

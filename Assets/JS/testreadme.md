@@ -5,7 +5,7 @@
 
 
 
-## License <br />[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## License <br />[![License: GPL V3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 ## Table of Contents
 1. [Description](#description)
@@ -34,10 +34,10 @@
 ## Licenses
 
  
-* https://opensource.org/licensesApache 2.0
+* https://opensource.org/licensesGPL V3
 
-        This product is licensed under the Apache 2.0 product.
+        This product is licensed under the GPL V3 product.
 
 ## Questions
-Please check out my https://mcnaryj.github.io/ for more questions on the methodology and what have you.
-I can also be addressed at jack.mcnary@gmail.com for direct requests.
+Please check out my return "No License" for more questions on the methodology and what have you.
+I can also be addressed at jihad for direct requests.
