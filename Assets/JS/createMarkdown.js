@@ -80,8 +80,8 @@ ${renderLicenseLink(license)}
 ${renderLicenseSection(license)}
 
 ## Questions
-Please check out my ${github} for more questions on the methodology and what have you.
-I can also be addressed at ${email} for direct requests.
+Please check out my [github profile](${github}) for more questions on the methodology and what have you.
+I can also be addressed at [${email}](${email}) for direct requests.
 `;
 
 }
