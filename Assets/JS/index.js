@@ -19,7 +19,7 @@ const readmeQuestions = [
     {
         type: 'input',
         name: 'title',
-        message: "Give the readme a title",
+        message: "Enter the title of your project.",
     },
     {
         type: 'input',
@@ -34,7 +34,7 @@ const readmeQuestions = [
     {
         type: 'input',
         name: 'usage',
-        message: "Describe the intended usage of this application",
+        message: "Describe the intended usage of this application.",
     },
     {
         type: 'input',
@@ -44,14 +44,13 @@ const readmeQuestions = [
     {
         type: 'input',
         name: 'license',
-        message: "Put any licenses here.",
+        message: "Provide any licenses (i.e., MPL 2.0, GPL V3, etc.) here",
     },
     {
         type: 'input',
         name: 'tests',
-        message: "Provide test instructions",
+        message: "Provide detailed instructions to allow the user to test the application.",
     },
-
     {
         type: 'input',
         name: 'github',

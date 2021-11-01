@@ -56,7 +56,7 @@ ${renderLicenseBadge(license)}
 5. [Tests](#tests)
 6. [Questions](#questions)
 
-## Installation Instructions
+## Installation
 
 ${installation}
 
