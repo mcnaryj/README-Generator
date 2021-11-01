@@ -36,6 +36,7 @@ function renderLicenseSection(license) {
 // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 // [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
+// adding a badge to the top of the readme (line 49)
 function generateMarkdown({ title, description, installation, usage, contributing, tests, license, email, github }) {
     return `
 ## ${title}
@@ -43,6 +44,7 @@ function generateMarkdown({ title, description, installation, usage, contributin
 ## Description
 
 ${description}
+
 
 ${renderLicenseBadge(license)}
 
@@ -72,7 +74,6 @@ ${tests}
 
 ## Licenses
 
- 
 ${renderLicenseLink(license)}
 ${renderLicenseSection(license)}
 
@@ -80,7 +81,12 @@ ${renderLicenseSection(license)}
 Please check out my ${github} for more questions on the methodology and what have you.
 I can also be addressed at ${email} for direct requests.
 `;
+
 }
+// To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the syntax on line 76-78:
+```md
+![alt text](assets / images / screenshot.png)
+    ```
 
 // exporting the function
 module.exports = generateMarkdown;

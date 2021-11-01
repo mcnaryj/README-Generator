@@ -9,8 +9,7 @@
 // // TODO: Create a function to initialize app
 // function init() { }
 
-// // Function call to initialize app
-// init();
+
 
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -20,17 +19,17 @@ const readmeQuestions = [
     {
         type: 'input',
         name: 'title',
-        message: "Give your readme a Title!",
+        message: "Give the readme a title",
     },
     {
         type: 'input',
         name: 'description',
-        message: "Describe the project",
+        message: "Describe the project.",
     },
     {
         type: 'input',
         name: 'installation',
-        message: "Provide detailed instructions on how to prepare the content",
+        message: "Provide detailed instructions on how to install the content.",
     },
     {
         type: 'input',
@@ -39,25 +38,20 @@ const readmeQuestions = [
     },
     {
         type: 'input',
-        name: 'license',
-        message: "Put any licenses here.",
+        name: 'contributing',
+        message: "List those who have contributed to your project.",
     },
     {
         type: 'input',
-        name: 'contributing',
-        message: "List those who have contributed to your project.",
+        name: 'license',
+        message: "Put any licenses here.",
     },
     {
         type: 'input',
         name: 'tests',
         message: "Provide test instructions",
     },
-    // need to update this part
-    {
-        type: 'input',
-        name: 'license',
-        message: "Provide the license you used",
-    },
+
     {
         type: 'input',
         name: 'github',
@@ -67,6 +61,11 @@ const readmeQuestions = [
         type: 'input',
         name: 'email',
         message: "Provide your email address",
+    },
+    {
+        type: 'input',
+        name: 'features',
+        message: "Add any special features your project has here",
     }
 ]
 console.log(readmeQuestions);
@@ -89,7 +88,8 @@ function writeToFile(data) {
     );
 }
 
-// calling the init function
+
+// Initializing the app
 init();
 
 
