@@ -39,5 +39,5 @@ Install npm and select the assets/js directory. From there, run node index.js, w
         This product is licensed under the MIT product.
 
 ## Questions
-Please check out my https://github.com/mcnaryj for more questions on the methodology and what have you.
-I can also be addressed at jack.mcnary@gmail.com for direct requests.
+Please check out my [github profile](https://github.com/mcnaryj) for more questions on the methodology and what have you.
+I can also be reached at jack.mcnary@gmail.com for direct requests.
